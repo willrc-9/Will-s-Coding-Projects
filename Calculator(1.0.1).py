@@ -19,13 +19,18 @@ def getNum(prompt):
         except ValueError:
             print("Not an acceptable value. Please Try again.")
 
+
+# determines if number is whole or not
+# just something to make the number prettier on the final result
+# so instead of printing ex. 5.0, it prints 5
+
 def checkIfWhole(num):
     return num == int(num)
 
 print("Welcome! Will you be (a)dding, (s)ubtracting, (m)ultiplying, or (d)ividing?")
 
-# a loop that ensures the user actually inputs a proper respsonse
 while True:
+    # a loop that ensures the user actually inputs a proper respsonse
     while  True:
 
         device = input("Please input the letter associated with the math function you desire, or 'q' to quit (No caps please!): ")
@@ -55,12 +60,13 @@ while True:
                 print("You chose division!")
             break
 
-
+    # gathers inputs
     while True:
         num1 = getNum("Please input the first number which you would like to " + devicena + ": ")
         num2 = getNum("Please input the next number which you would like to " + devicena + ": ")
         break
 
+    # the actual math here
     if devicen == "+":
         result = num1+num2
     elif devicen == "-":
@@ -70,10 +76,14 @@ while True:
     else:
         result = num1/num2
 
+    # doing the other stuff to make the number pretty if whole
     if checkIfWhole(result):
         result = int(result)
 
+    # printing result!
     print(str(num1) + " " + str(devicen) + " " + str(num2) + " = " + str(result))
+
+    # asking if you would like to continue, and restarting loop if yes. thanking you and ending if not
     while True:
         cont = input("Would you like to continue? y/n: ")
         
