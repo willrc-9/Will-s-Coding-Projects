@@ -56,7 +56,6 @@ while True:
             break
 
 
-
     while True:
         num1 = getNum("Please input the first number which you would like to " + devicena + ": ")
         num2 = getNum("Please input the next number which you would like to " + devicena + ": ")
