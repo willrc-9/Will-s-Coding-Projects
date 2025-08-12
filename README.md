@@ -13,4 +13,7 @@ Started 08/08/2025
 Completed rev1 08/08/2025
 
 Second Project
-Guess The Number!
+Calculator 2.0
+Started 8/10/2025
+Completed 8/12/2025
+
